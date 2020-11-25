@@ -1,0 +1,40 @@
+@import config
+
+// CUSTOM USER STYLES & IMPORTS
+.header
+  width: 100%
+  height: 100vh
+  min-height: 700px
+  background-color: #333337
+  .logo
+    color: $accent
+    font-size: 54px
+    padding: 60px 65px
+    font-weight: bold
+    span
+      font-weight: lighter
+      color: #fff
+.map
+  padding: 20px
+  text-align: center
+  // transform-style: preserve-3d
+
+  svg
+    width: 90%
+    display: block
+    margin: 0 auto
+
+    #map
+      fill: #000 !important
+
+  .region:hover
+    //fill: $accent
+    cursor: pointer
+
+.footer
+  text-align: center
+  font-size: 14px
+  position: absolute
+  bottom: 0
+  a
+    text-decoration: underline
