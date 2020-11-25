@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             {
               y: cy - this.modifyVar,
               fill: "#0090FF",
-              zindex: 10000,
+              zIndex: 10000,
               duration: 0.25,
             }
           );
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             {
               y: cy,
-              zindex: 0,
+              zIndex: 0,
               fill: "#dededf",
               duration: 0.25,
             }
