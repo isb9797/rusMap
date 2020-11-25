@@ -28,10 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
         item.addEventListener("mouseover", (e) => {
           gsap.to(
             item,
+            1,
 
             {
               y: cy - this.modifyVar,
               fill: "#0090FF",
+              zindex: 10000,
+              duration: 0.25,
             }
           );
         });
@@ -39,10 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
         item.addEventListener("mouseout", (e) => {
           gsap.to(
             item,
+            1,
 
             {
               y: cy,
-              fill: "#ffffffd6",
+              zindex: 0,
+              fill: "#dededf",
+              duration: 0.25,
             }
           );
         });
