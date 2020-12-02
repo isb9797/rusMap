@@ -18,23 +18,74 @@
   padding: 20px
   text-align: center
   transform-style: preserve-3d
+  height: 680px
+  z-index: 1
 
-  svg
-    width: 90%
-    display: block
+  .svg-responsive
+    width: 100%
+    height: 100%
     margin: 0 auto
-
-    #map
-      fill: #000 !important
+    -webkit-filter: drop-shadow( 0px 10px 2px #000 )
+    filter: drop-shadow( 0px 10px 2px #000 )
 
   .region:hover
     //fill: $accent
     cursor: pointer
+
+  #MOW
+    fill: #0090FF !important
 
 .footer
   text-align: center
   font-size: 14px
   position: absolute
   bottom: 0
+  color: #757575
   a
     text-decoration: underline
+    font-weight: bold
+    color: $accent
+
+//Информационный блок
+
+.information
+  min-width: 446px
+  width: 40%
+  font-size: 18px
+  margin: 65px
+  font-weight: lighter
+  margin-bottom: -160px
+  top: 0
+  right: 5%
+  position: absolute
+  text-align: left
+  z-index: 2000
+  b
+    font-weight: bold
+  .button
+    text-decoration: none
+    background-color: $accent
+    color: #fff
+    display: block
+    width: 220px
+    height: 58px
+    border-radius: 50px
+    position: relative
+    text-align: center
+    line-height: 58px
+    margin-top: 38px
+    box-shadow: 0px 10px 2px #000
+    transition: top 1s ease 0s
+
+    &:hover
+      top: -10px
+      box-shadow: 0px 20px 4px #000
+
+  h1
+    color: #ffffff
+    font-weight: normal
+    text-align-last: left
+    margin-bottom: 16px
+    span
+      color: $accent
+      font-weight: lighter
